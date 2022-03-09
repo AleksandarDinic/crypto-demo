@@ -23,6 +23,11 @@
 		42579BB227D8A193004B1124 /* HTTPMethodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42579BB127D8A193004B1124 /* HTTPMethodTests.swift */; };
 		42579BB427D8A33F004B1124 /* HTTPStatusCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42579BB327D8A33F004B1124 /* HTTPStatusCodeTests.swift */; };
 		42579BB827D8B2E8004B1124 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42579BB727D8B2E8004B1124 /* Coin.swift */; };
+		42579BBB27D8B6C5004B1124 /* CoinGeckoAPIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42579BBA27D8B6C5004B1124 /* CoinGeckoAPIProvider.swift */; };
+		42579BBD27D8B6DE004B1124 /* CoinGeckoEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42579BBC27D8B6DE004B1124 /* CoinGeckoEndpoint.swift */; };
+		42579BBF27D8B8A8004B1124 /* NetworkResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42579BBE27D8B8A8004B1124 /* NetworkResponseHandler.swift */; };
+		42579BC127D8B9D5004B1124 /* NetworkErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42579BC027D8B9D5004B1124 /* NetworkErrorResponse.swift */; };
+		42579BC527D8C005004B1124 /* CoinGeckoEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42579BC427D8C005004B1124 /* CoinGeckoEndpointTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +66,11 @@
 		42579BB127D8A193004B1124 /* HTTPMethodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethodTests.swift; sourceTree = "<group>"; };
 		42579BB327D8A33F004B1124 /* HTTPStatusCodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatusCodeTests.swift; sourceTree = "<group>"; };
 		42579BB727D8B2E8004B1124 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		42579BBA27D8B6C5004B1124 /* CoinGeckoAPIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinGeckoAPIProvider.swift; sourceTree = "<group>"; };
+		42579BBC27D8B6DE004B1124 /* CoinGeckoEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinGeckoEndpoint.swift; sourceTree = "<group>"; };
+		42579BBE27D8B8A8004B1124 /* NetworkResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponseHandler.swift; sourceTree = "<group>"; };
+		42579BC027D8B9D5004B1124 /* NetworkErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorResponse.swift; sourceTree = "<group>"; };
+		42579BC427D8C005004B1124 /* CoinGeckoEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinGeckoEndpointTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +142,7 @@
 		42579B7927D78B37004B1124 /* CryptoDemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				42579BC227D8BFF2004B1124 /* Cryptocurrency */,
 				42579BAF27D8A17B004B1124 /* Network */,
 			);
 			path = CryptoDemoTests;
@@ -172,6 +183,8 @@
 				42579B9E27D79704004B1124 /* HTTPStatusCode.swift */,
 				42579BA427D7975D004B1124 /* NetworkError.swift */,
 				42579BA227D79745004B1124 /* NetworkResponse.swift */,
+				42579BBE27D8B8A8004B1124 /* NetworkResponseHandler.swift */,
+				42579BC027D8B9D5004B1124 /* NetworkErrorResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -197,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				42579BB627D8B2B4004B1124 /* Domain */,
+				42579BB927D8B6A9004B1124 /* Network */,
 			);
 			path = Cryptocurrency;
 			sourceTree = "<group>";
@@ -207,6 +221,31 @@
 				42579BB727D8B2E8004B1124 /* Coin.swift */,
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		42579BB927D8B6A9004B1124 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				42579BBA27D8B6C5004B1124 /* CoinGeckoAPIProvider.swift */,
+				42579BBC27D8B6DE004B1124 /* CoinGeckoEndpoint.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		42579BC227D8BFF2004B1124 /* Cryptocurrency */ = {
+			isa = PBXGroup;
+			children = (
+				42579BC327D8BFF7004B1124 /* Network */,
+			);
+			path = Cryptocurrency;
+			sourceTree = "<group>";
+		};
+		42579BC327D8BFF7004B1124 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				42579BC427D8C005004B1124 /* CoinGeckoEndpointTests.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,14 +386,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				42579B9F27D79704004B1124 /* HTTPStatusCode.swift in Sources */,
+				42579BBD27D8B6DE004B1124 /* CoinGeckoEndpoint.swift in Sources */,
 				42579BA327D79745004B1124 /* NetworkResponse.swift in Sources */,
 				42579B9D27D796EB004B1124 /* NetworkLogger.swift in Sources */,
+				42579BBF27D8B8A8004B1124 /* NetworkResponseHandler.swift in Sources */,
 				42579B9B27D796CE004B1124 /* EndpointType.swift in Sources */,
 				42579BA127D7971F004B1124 /* NetworkManager.swift in Sources */,
 				42579B6C27D78B35004B1124 /* ContentView.swift in Sources */,
 				42579BA527D7975D004B1124 /* NetworkError.swift in Sources */,
 				42579B6A27D78B35004B1124 /* CryptoDemoApp.swift in Sources */,
+				42579BBB27D8B6C5004B1124 /* CoinGeckoAPIProvider.swift in Sources */,
 				42579BB827D8B2E8004B1124 /* Coin.swift in Sources */,
+				42579BC127D8B9D5004B1124 /* NetworkErrorResponse.swift in Sources */,
 				42579B9927D79696004B1124 /* HTTPMethod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,6 +408,7 @@
 			files = (
 				42579BB427D8A33F004B1124 /* HTTPStatusCodeTests.swift in Sources */,
 				42579BB227D8A193004B1124 /* HTTPMethodTests.swift in Sources */,
+				42579BC527D8C005004B1124 /* CoinGeckoEndpointTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

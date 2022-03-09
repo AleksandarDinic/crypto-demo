@@ -24,3 +24,26 @@ enum NetworkError: Error {
     case internalServerError
     
 }
+
+extension NetworkError {
+    
+    init(for statusCode: HTTPStatusCode, message: String?) {
+        switch statusCode {
+        case .noContent:
+            self = .noContent(message)
+        case .badRequest:
+            self = .badRequest(message)
+        case .unauthorized:
+            self = .unauthorized(message)
+        case .forbidden:
+            self = .forbidden(message)
+        case .notFound:
+            self = .notFound(message)
+        case .internalServerError:
+            self = .internalServerError
+        default:
+            self = .undefined(message)
+        }
+    }
+    
+}
