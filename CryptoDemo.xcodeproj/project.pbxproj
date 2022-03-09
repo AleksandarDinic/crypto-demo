@@ -28,6 +28,16 @@
 		42579BBF27D8B8A8004B1124 /* NetworkResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42579BBE27D8B8A8004B1124 /* NetworkResponseHandler.swift */; };
 		42579BC127D8B9D5004B1124 /* NetworkErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42579BC027D8B9D5004B1124 /* NetworkErrorResponse.swift */; };
 		42579BC527D8C005004B1124 /* CoinGeckoEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42579BC427D8C005004B1124 /* CoinGeckoEndpointTests.swift */; };
+		42579BC827D8C803004B1124 /* CoinAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42579BC727D8C803004B1124 /* CoinAPIService.swift */; };
+		42579BCA27D8C850004B1124 /* CoinAPIWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42579BC927D8C850004B1124 /* CoinAPIWrapper.swift */; };
+		42579BCC27D8C85E004B1124 /* CoinCacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42579BCB27D8C85E004B1124 /* CoinCacheService.swift */; };
+		42579BCE27D8C86B004B1124 /* CoinDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42579BCD27D8C86B004B1124 /* CoinDataProvider.swift */; };
+		42579BD027D8C87C004B1124 /* CoinRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42579BCF27D8C87C004B1124 /* CoinRepository.swift */; };
+		42579BD327D8C976004B1124 /* DecoderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42579BD227D8C976004B1124 /* DecoderService.swift */; };
+		42579BD527D8CD3B004B1124 /* DataSourceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42579BD427D8CD3B004B1124 /* DataSourceLayer.swift */; };
+		42579BD827D8E799004B1124 /* CoinAPIWrapperFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42579BD727D8E799004B1124 /* CoinAPIWrapperFactory.swift */; };
+		42579BDA27D8E7D6004B1124 /* CoinRepositoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42579BD927D8E7D6004B1124 /* CoinRepositoryFactory.swift */; };
+		42579BDC27D8E7EF004B1124 /* CoinDataProviderFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42579BDB27D8E7EF004B1124 /* CoinDataProviderFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +81,16 @@
 		42579BBE27D8B8A8004B1124 /* NetworkResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponseHandler.swift; sourceTree = "<group>"; };
 		42579BC027D8B9D5004B1124 /* NetworkErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorResponse.swift; sourceTree = "<group>"; };
 		42579BC427D8C005004B1124 /* CoinGeckoEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinGeckoEndpointTests.swift; sourceTree = "<group>"; };
+		42579BC727D8C803004B1124 /* CoinAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinAPIService.swift; sourceTree = "<group>"; };
+		42579BC927D8C850004B1124 /* CoinAPIWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinAPIWrapper.swift; sourceTree = "<group>"; };
+		42579BCB27D8C85E004B1124 /* CoinCacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCacheService.swift; sourceTree = "<group>"; };
+		42579BCD27D8C86B004B1124 /* CoinDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataProvider.swift; sourceTree = "<group>"; };
+		42579BCF27D8C87C004B1124 /* CoinRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRepository.swift; sourceTree = "<group>"; };
+		42579BD227D8C976004B1124 /* DecoderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoderService.swift; sourceTree = "<group>"; };
+		42579BD427D8CD3B004B1124 /* DataSourceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceLayer.swift; sourceTree = "<group>"; };
+		42579BD727D8E799004B1124 /* CoinAPIWrapperFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinAPIWrapperFactory.swift; sourceTree = "<group>"; };
+		42579BD927D8E7D6004B1124 /* CoinRepositoryFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRepositoryFactory.swift; sourceTree = "<group>"; };
+		42579BDB27D8E7EF004B1124 /* CoinDataProviderFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataProviderFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +145,7 @@
 				42579B6B27D78B35004B1124 /* ContentView.swift */,
 				42579B6927D78B35004B1124 /* CryptoDemoApp.swift */,
 				42579BB527D8B2AB004B1124 /* Cryptocurrency */,
-				42579B9627D79677004B1124 /* Network */,
+				42579BD127D8C957004B1124 /* Framework */,
 				42579B9527D79115004B1124 /* Resources */,
 			);
 			path = CryptoDemo;
@@ -211,6 +231,7 @@
 			children = (
 				42579BB627D8B2B4004B1124 /* Domain */,
 				42579BB927D8B6A9004B1124 /* Network */,
+				42579BC627D8C7B6004B1124 /* Repository */,
 			);
 			path = Cryptocurrency;
 			sourceTree = "<group>";
@@ -246,6 +267,39 @@
 				42579BC427D8C005004B1124 /* CoinGeckoEndpointTests.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		42579BC627D8C7B6004B1124 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				42579BC727D8C803004B1124 /* CoinAPIService.swift */,
+				42579BC927D8C850004B1124 /* CoinAPIWrapper.swift */,
+				42579BCB27D8C85E004B1124 /* CoinCacheService.swift */,
+				42579BCD27D8C86B004B1124 /* CoinDataProvider.swift */,
+				42579BCF27D8C87C004B1124 /* CoinRepository.swift */,
+				42579BD627D8E784004B1124 /* Factory */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		42579BD127D8C957004B1124 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				42579B9627D79677004B1124 /* Network */,
+				42579BD227D8C976004B1124 /* DecoderService.swift */,
+				42579BD427D8CD3B004B1124 /* DataSourceLayer.swift */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		42579BD627D8E784004B1124 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				42579BD727D8E799004B1124 /* CoinAPIWrapperFactory.swift */,
+				42579BDB27D8E7EF004B1124 /* CoinDataProviderFactory.swift */,
+				42579BD927D8E7D6004B1124 /* CoinRepositoryFactory.swift */,
+			);
+			path = Factory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -386,18 +440,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				42579B9F27D79704004B1124 /* HTTPStatusCode.swift in Sources */,
+				42579BC827D8C803004B1124 /* CoinAPIService.swift in Sources */,
 				42579BBD27D8B6DE004B1124 /* CoinGeckoEndpoint.swift in Sources */,
+				42579BCE27D8C86B004B1124 /* CoinDataProvider.swift in Sources */,
+				42579BCA27D8C850004B1124 /* CoinAPIWrapper.swift in Sources */,
 				42579BA327D79745004B1124 /* NetworkResponse.swift in Sources */,
+				42579BD527D8CD3B004B1124 /* DataSourceLayer.swift in Sources */,
 				42579B9D27D796EB004B1124 /* NetworkLogger.swift in Sources */,
+				42579BD827D8E799004B1124 /* CoinAPIWrapperFactory.swift in Sources */,
 				42579BBF27D8B8A8004B1124 /* NetworkResponseHandler.swift in Sources */,
+				42579BCC27D8C85E004B1124 /* CoinCacheService.swift in Sources */,
 				42579B9B27D796CE004B1124 /* EndpointType.swift in Sources */,
+				42579BDA27D8E7D6004B1124 /* CoinRepositoryFactory.swift in Sources */,
 				42579BA127D7971F004B1124 /* NetworkManager.swift in Sources */,
+				42579BDC27D8E7EF004B1124 /* CoinDataProviderFactory.swift in Sources */,
 				42579B6C27D78B35004B1124 /* ContentView.swift in Sources */,
 				42579BA527D7975D004B1124 /* NetworkError.swift in Sources */,
 				42579B6A27D78B35004B1124 /* CryptoDemoApp.swift in Sources */,
+				42579BD027D8C87C004B1124 /* CoinRepository.swift in Sources */,
 				42579BBB27D8B6C5004B1124 /* CoinGeckoAPIProvider.swift in Sources */,
 				42579BB827D8B2E8004B1124 /* Coin.swift in Sources */,
 				42579BC127D8B9D5004B1124 /* NetworkErrorResponse.swift in Sources */,
+				42579BD327D8C976004B1124 /* DecoderService.swift in Sources */,
 				42579B9927D79696004B1124 /* HTTPMethod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
