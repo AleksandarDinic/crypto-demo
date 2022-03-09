@@ -38,6 +38,8 @@
 		42579BD827D8E799004B1124 /* CoinAPIWrapperFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42579BD727D8E799004B1124 /* CoinAPIWrapperFactory.swift */; };
 		42579BDA27D8E7D6004B1124 /* CoinRepositoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42579BD927D8E7D6004B1124 /* CoinRepositoryFactory.swift */; };
 		42579BDC27D8E7EF004B1124 /* CoinDataProviderFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42579BDB27D8E7EF004B1124 /* CoinDataProviderFactory.swift */; };
+		42579BDF27D8E8AE004B1124 /* CoinInMemoryCacheProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42579BDE27D8E8AE004B1124 /* CoinInMemoryCacheProvider.swift */; };
+		42579BE227D929DF004B1124 /* CoinInMemoryCacheProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42579BE127D929DF004B1124 /* CoinInMemoryCacheProviderTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +93,8 @@
 		42579BD727D8E799004B1124 /* CoinAPIWrapperFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinAPIWrapperFactory.swift; sourceTree = "<group>"; };
 		42579BD927D8E7D6004B1124 /* CoinRepositoryFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRepositoryFactory.swift; sourceTree = "<group>"; };
 		42579BDB27D8E7EF004B1124 /* CoinDataProviderFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataProviderFactory.swift; sourceTree = "<group>"; };
+		42579BDE27D8E8AE004B1124 /* CoinInMemoryCacheProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinInMemoryCacheProvider.swift; sourceTree = "<group>"; };
+		42579BE127D929DF004B1124 /* CoinInMemoryCacheProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinInMemoryCacheProviderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +233,7 @@
 		42579BB527D8B2AB004B1124 /* Cryptocurrency */ = {
 			isa = PBXGroup;
 			children = (
+				42579BDD27D8E89E004B1124 /* Cache */,
 				42579BB627D8B2B4004B1124 /* Domain */,
 				42579BB927D8B6A9004B1124 /* Network */,
 				42579BC627D8C7B6004B1124 /* Repository */,
@@ -256,6 +261,7 @@
 		42579BC227D8BFF2004B1124 /* Cryptocurrency */ = {
 			isa = PBXGroup;
 			children = (
+				42579BE027D929D1004B1124 /* Cache */,
 				42579BC327D8BFF7004B1124 /* Network */,
 			);
 			path = Cryptocurrency;
@@ -300,6 +306,22 @@
 				42579BD927D8E7D6004B1124 /* CoinRepositoryFactory.swift */,
 			);
 			path = Factory;
+			sourceTree = "<group>";
+		};
+		42579BDD27D8E89E004B1124 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				42579BDE27D8E8AE004B1124 /* CoinInMemoryCacheProvider.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		42579BE027D929D1004B1124 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				42579BE127D929DF004B1124 /* CoinInMemoryCacheProviderTests.swift */,
+			);
+			path = Cache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -450,6 +472,7 @@
 				42579BD827D8E799004B1124 /* CoinAPIWrapperFactory.swift in Sources */,
 				42579BBF27D8B8A8004B1124 /* NetworkResponseHandler.swift in Sources */,
 				42579BCC27D8C85E004B1124 /* CoinCacheService.swift in Sources */,
+				42579BDF27D8E8AE004B1124 /* CoinInMemoryCacheProvider.swift in Sources */,
 				42579B9B27D796CE004B1124 /* EndpointType.swift in Sources */,
 				42579BDA27D8E7D6004B1124 /* CoinRepositoryFactory.swift in Sources */,
 				42579BA127D7971F004B1124 /* NetworkManager.swift in Sources */,
@@ -472,6 +495,7 @@
 			files = (
 				42579BB427D8A33F004B1124 /* HTTPStatusCodeTests.swift in Sources */,
 				42579BB227D8A193004B1124 /* HTTPMethodTests.swift in Sources */,
+				42579BE227D929DF004B1124 /* CoinInMemoryCacheProviderTests.swift in Sources */,
 				42579BC527D8C005004B1124 /* CoinGeckoEndpointTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,7 +17,6 @@ final class CoinGeckoEndpointTests: XCTestCase {
     private var page: Int!
     private var sparkline: Bool!
     private var sut: CoinGeckoEndpoint!
-    
 
     override func setUpWithError() throws {
         currency = "usd"
