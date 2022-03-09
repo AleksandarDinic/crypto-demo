@@ -145,8 +145,8 @@
 		42579B9527D79115004B1124 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				42579B6F27D78B37004B1124 /* Preview Content */,
 				42579B6D27D78B37004B1124 /* Assets.xcassets */,
+				42579B6F27D78B37004B1124 /* Preview Content */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
